@@ -159,7 +159,6 @@ class BaseHandle:
             lg.info(f'滚动元素{photo_screen}_{loc}成功')
 
 
-
     # 保存图片
     def _save_photo(self, photo_screen):
         str_time = time.strftime("%Y%d%m%H%M%S", time.localtime(time.time()))
