@@ -7,11 +7,11 @@
 import os
 import time
 
-str_time = time.localtime('%Y%m%d%H%M%S', time.time())
+str_time = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
 
 common_path = os.path.dirname(__file__)
 root_path = os.path.dirname(common_path)
-out_path = os.path.join(root_path, 'out_put')
+out_path = os.path.join(root_path, 'out_puts')
 out_put_path = os.path.join(out_path, 'my_log')
 
 # 保存图片的路径

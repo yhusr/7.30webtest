@@ -82,11 +82,11 @@ class BaseHandle:
         try:
             ele.send_keys(content)
         except:
-            lg.exception(msg=f'元素：{photo_screen}_{loc}中输入内容{content}失败')
+            lg.exception(msg=f'元素：{photo_screen}_{loc}中输入内容失败')
             self._save_photo(photo_screen)
             raise
         else:
-            lg.info(msg=f'元素：{photo_screen}_{loc}中输入内容{content}成功')
+            lg.info(msg=f'元素：{photo_screen}_{loc}中输入内容成功')
 
     # 获取文本封装
     def get_text(self, loc, photo_screen):
